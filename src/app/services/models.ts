@@ -1,4 +1,5 @@
 export interface Game {
+  id: number;
   background_image: string;
   name: string;
   released: string;
@@ -14,6 +15,11 @@ export interface Game {
   trailers: Array<Trailer>;
 }
 
+export interface Filters {
+  name: string;
+  value: string;
+}
+
 export interface APIResponse<T> {
   results: Array<T>;
 }
@@ -25,6 +31,7 @@ interface Genre {
 interface ParentPlatform {
   platform: {
     name: string;
+    slug: string;
   };
 }
 
@@ -47,3 +54,4 @@ interface Trailer {
     max: string;
   };
 }
+
