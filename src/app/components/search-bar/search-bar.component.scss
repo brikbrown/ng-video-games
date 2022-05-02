@@ -20,14 +20,14 @@
     width: 300px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
     outline: none;
     border: none;
   }
   &-button {
     border: none;
     outline: none;
-    background: #3f51b5;
-    padding: 10px;
     border-left: 1px solid rgba(0, 0, 0, 0.3);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -35,12 +35,6 @@
     font-weight: 700;
     transition-duration: 0.3s;
     cursor: pointer;
-
-    &:hover {
-      color: #3f51b5;
-      background-color: #fff;
-      border: 1px solid #3f51b5;
-    }
   }
 }
 
@@ -50,4 +44,14 @@
   font-weight: 700;
   cursor: pointer;
   text-decoration: none;
+}
+
+::ng-deep app-search-bar .p-button {
+  height: 38px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+
+  :hover {
+    color: white;
+  }
 }
