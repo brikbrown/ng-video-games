@@ -1,11 +1,13 @@
 <div class="search-container">
   <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
-    <span class="logo" routerLink="/">NgVGDB</span>
-    <input
+    <span class="logo" routerLink="/">Ng GamePortal</span>
+    <input 
+      type="text"
       class="search-input"
-      name="search"
-      placeholder="Search 500,000+ games"
+      id="search"
+      placeholder="Search 700,000+ games"
+      pInputText
     />
-    <button class="search-button">Search</button>
+    <p-button label="Search" class="search-button"></p-button>
   </form>
 </div>
